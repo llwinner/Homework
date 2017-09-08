@@ -1,8 +1,6 @@
 # 第一周作业
 ## 说明
 > 
-> `chromedriver.exe`	e2e测试chrome驱动，在windows server 2008 r2 下测试成功
-> 
 > `e2e.js`			e2e测试文件，实现连点10次退出
 > 
 > `index.css`		大拇指的css文件
