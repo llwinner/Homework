@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="thumb.css">
+</head>
+
+<body>
+    <!-- 不知道这种只需要一句的onclick函数，是否应该放到一个单独的js文件中，这次为了方便，就先放到html标签里边了。。。 -->
+    <div class="hand" id="thumb" onclick="axios.post('http://localhost:8081/homework2/index.php')">
+            <div class="finger"></div>
+            <div class="finger"></div>
+            <div class="finger"></div>
+            <div class="finger"></div>
+            <div class="finger thumb"></div>
+            <div class="arm"></div>
+    </div>
+    <span class="hide" id="animation">+1</span>
+    </form>
+
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/systemjs/0.20.2/system.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.16.2/axios.min.js"></script>
+    <script type="text/javascript">
+
+        SystemJS.import('script/index-es.js').then(function (m) {
+            $.extend({
+                thumb: m.default.Thumb
+
+            });
+            callBack();
+
+        });
+        function callBack() {
+            var f = new $.thumb(0, $('#thumb'));
+            f.clickAction();
+        }
+    </script>
+</body>
+
+</html>

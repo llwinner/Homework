@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/styles/thumb.css">
+</head>
+
+<body>
+    <div class="hand" id="thumb">
+        <div class="finger"></div>
+        <div class="finger"></div>
+        <div class="finger"></div>
+        <div class="finger"></div>
+        <div class="finger thumb"></div>
+        <div class="arm"></div>
+    </div>
+    <span class="hide" id="animation">+1</span>
+    </form>
+
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/systemjs/0.20.2/system.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.16.2/axios.min.js"></script>
+    <!-- 加一方法 -->
+    <script type="text/javascript" src="/script/method.js"></script>
+    <script type="text/javascript" src="/script/mysql.js"></script>
+    <script type="text/javascript">
+
+        SystemJS.import('/script/index-es.js').then(function (m) {
+            $.extend({
+                thumb: m.default.Thumb
+
+            });
+            callBack();
+     
+        });
+        function callBack() {
+            var f = new $.thumb(0, $('#thumb'));
+            f.clickAction();
+        }
+
+    </script>
+</body>
+
+</html>
