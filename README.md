@@ -1,7 +1,25 @@
 # 第一周作业
 ## 说明
 > 
-> 已完成
+> `chromedriver.exe`	e2e测试chrome驱动，在windows server 2008 r2 下测试成功
+> 
+> `e2e.js`			e2e测试文件，实现连点10次退出
+> 
+> `index.css`		大拇指的css文件
+> 
+> `index.html`		首页html，显示了大拇指
+> 
+> `index.js`		通过`system.js`引入了编译后的`thumb.js（thumb-compile.js）`
+> 
+> `plugin.js`		jquery插件		
+> 
+> `thumb.js`		实现大拇指功能的js，es6编写
+> 
+> `thumb.part.js`		为了单元测试，把方法提取出来放到这个文件
+> 
+> `thumb.spec.js`		单元测试文件
+> 
+> `thumb-compile.js`	`thumb.js`的`babel`编译后的文件
 > 
 # 第二周作业
 ## 说明
