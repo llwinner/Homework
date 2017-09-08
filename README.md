@@ -36,7 +36,7 @@
 > 
 > `app.js`node.js的启动文件，里边设置了`/index/index`路由进行服务端渲染，设置了`/mysql`路由让前端进行post提交
 > 
-> mysql数据库中，在test库下边创建了yd表，里边2个列，一个是id自增列，一个是click_count点击更新
+> mysql数据库中，在test库下边创建了yd表，里边2个列，一个是id自增列，一个是click_count记录点击次数
 ## 其他问题
 > 
 > 是通过两次点击的时间差来判断连点，不知道是否是正确的做法
